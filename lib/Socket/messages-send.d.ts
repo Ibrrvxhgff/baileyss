@@ -23,7 +23,6 @@ export declare const makeMessagesSocket: (config: SocketConfig) => {
     sendPeerDataOperationMessage: (pdoMessage: proto.Message.IPeerDataOperationRequestMessage) => Promise<string>;
     updateMediaMessage: (message: proto.IWebMessageInfo) => Promise<proto.IWebMessageInfo>;
     sendMessage: (jid: string, content: AnyMessageContent, options?: MiscMessageGenerationOptions) => Promise<proto.WebMessageInfo>;
-    rex: any;
     subscribeNewsletterUpdates: (jid: string) => Promise<{
         duration: string;
     }>;

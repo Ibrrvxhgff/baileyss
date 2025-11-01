@@ -49,18 +49,6 @@ export declare const makeChatsSocket: (config: SocketConfig) => {
         id: string;
         fromMe?: boolean;
     }[], star: boolean) => Promise<void>;
-    /**
- * Custom: checkStatusWA (for legacy Baileys)
- * - Mengecek apakah nomor WA aktif / dibanned
- * - Mengambil bio/status jika masih aktif
- */
-checkStatusWA: (numberOrJid: string) => Promise<{
-    jid: string
-    IsBanned: boolean
-    Statusbio: string | null
-    setAt: Date | null
-    error?: string
-}>,
     executeUSyncQuery: (usyncQuery: USyncQuery) => Promise<import("../WAUSync").USyncQueryResult | undefined>;
     type: "md";
     ws: import("./Client").WebSocketClient;
