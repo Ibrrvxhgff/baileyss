@@ -28,8 +28,7 @@
     "build:tsc": "tsc",
     "gen:protobuf": "sh WAProto/GenerateStatics.sh",
     "lint": "eslint src --ext .js,.ts,.jsx,.tsx",
-    "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx",
-    "test": "jest"
+    "lint:fix": "eslint src --fix --ext .js,.ts,.jsx,.tsx"
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
